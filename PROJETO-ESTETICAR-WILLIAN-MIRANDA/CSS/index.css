@@ -53,16 +53,57 @@ main{
 }
 
 
+.greenLine{
+    height: 4px;
+    width: 100px;
+    background-color: #ACF39D;
+    position: relative;
+    margin-left: 16px;
+}
 
 
 
+
+/* Smartphone */
 @media screen and (min-width: 769px) {
 
 .imgMain{
     padding: 0;
+    width: 50%;
 }
 .txtMain{
     padding: 0;
+    margin: 0;
 }
+
+.txtRight{
+    margin-left: 24px;
+}
+
+.txtLeft{
+    margin-right: 24px;
+}
+
+
+
+#homeTitleBg{
+    background-image: url(../imagens/destaque-home.webp);
+    background-size: cover;
+    background-position: center;
+    padding: 250px 0;
+    position: relative;
+}
+
+#firstTxtImg, #thirdTxtImg{
+    display: flex;
+    align-items: center;
+}
+
+#secondTxtImg, #fourthTxtImg{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
 
 }
