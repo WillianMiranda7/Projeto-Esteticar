@@ -11,11 +11,11 @@ body {
     color: white;
     background-color: #0d1821;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px
+    font-size: 20px;
 }
 
 main{
-    margin-top: 100px; 
+    margin-top: 128px; 
 }
 
 /* Formatação universal do tamanho das fontes */
@@ -51,6 +51,10 @@ small {
     font-size: 0.833rem;
 }
 
+img{
+    border-radius: 5px;
+}
+
 
 /* Header */
 header {
@@ -58,7 +62,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-top: 24px;
+    padding: 24px 0;
     top: 0;
     background-color: rgba(13, 24, 33, 0.8);
     border-bottom: solid 2px #A30000;
@@ -90,6 +94,14 @@ header {
     border-bottom: #A30000 solid 2px;
 }
 
+#menuUl a:hover{
+    color: #ACF39D;
+}
+
+#menuFooter a:hover{
+    color: #ACF39D;
+}
+
 #menuUl li {
     margin-top: 32px;
 }
@@ -101,6 +113,10 @@ header {
     cursor: pointer;
     width: 48px;
     right: 0;
+    top: 32px;
+    background-color: #ACF39D;
+    border-radius: 50px;
+    padding: 5px;
     z-index: 1;
 }
 
@@ -111,8 +127,27 @@ header {
     width: 48px;
     position: absolute;
     right: 0;
+    top: 32px;
+    border-radius: 50px;
+    background-color: #ACF39D;
+    cursor: pointer;
     z-index: 1;
 }
+#backToTop{
+    display: none;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background-color: #ACF39D;
+    border-radius: 100%;
+    cursor: pointer;
+    padding: 8px;
+}
+svg{
+    width: 30px;
+    height: 25px;
+}
+
 
 
 /* Footer */
@@ -169,13 +204,17 @@ footer {
     height: 4px;
     width: 100px;
     margin: 24px 0;
-    border-radius: 0 25px 25px 0;
+    border-radius: 25px 0 0 25px;
     background-color: #ACF39D;
 }
 
 .containerSeparator{
     display: flex;
     justify-content: flex-end;
+}
+
+.content{
+    margin: 0 10% 0 10% ;
 }
 
 
@@ -188,6 +227,10 @@ footer {
     header {
         padding-bottom: 24px;
         padding-right: 32px;
+    }
+
+    footer{
+        justify-content: space-between;
     }
 
     #menuUl a.btContact {

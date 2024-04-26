@@ -9,8 +9,9 @@
 }
 
 #topOfAbout{
-    background-image: url(../imagens/quem-somos-leve.webp);
+    background-image: url(../imagens/quem-somos-leve.jpg);
     background-size: cover;
+    background-position: center;
     padding: 140px 0;
     position: relative;
 }
@@ -41,8 +42,38 @@
 
 .imgMain{
     padding: 0 8px;
+    margin-top: 32px;
 }
 .txtMain{
     padding: 0 8px;
     margin-top: 16px;
+}
+
+#overlayPhotoContact{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+@media screen and (min-width: 768px) {
+
+    #topOfAbout{
+        padding: 15% 0;
+    }
+
+    .content{
+        margin-top: 0;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    #explainAbout{
+        align-items: center;
+        justify-content: center;
+    }
+    
 }
