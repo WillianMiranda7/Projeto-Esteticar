@@ -208,9 +208,13 @@ footer {
     background-color: #ACF39D;
 }
 
-.containerSeparator{
+.containerSeparatorR{
+    width: 800px;
     display: flex;
     justify-content: flex-end;
+}
+.containerSeparatorL{
+    width: 800px;
 }
 
 .content{
@@ -239,7 +243,10 @@ footer {
 
     .content {
         margin: 0 10%;
-        margin-top: 126px;
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #menuUl a {

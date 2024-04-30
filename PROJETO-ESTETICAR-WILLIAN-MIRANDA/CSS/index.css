@@ -1,5 +1,4 @@
-
-#homeTitleBg{
+#homeTitleBg {
     background-image: url(../imagens/destaque-home.webp);
     background-size: cover;
     background-position: center;
@@ -7,7 +6,7 @@
     position: relative;
 }
 
-#overlayPhotoHome{
+#overlayPhotoHome {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
     top: 0;
@@ -16,13 +15,13 @@
     left: 0;
 }
 
-#homeTitleTxt{
+#homeTitle {
     position: relative;
     padding: 0 5%;
     font-size: 2rem;
 }
 
-#firstPRed{
+#firstPRed {
     margin-top: 16px;
     margin-bottom: 16px;
     padding: 24px;
@@ -31,7 +30,9 @@
     text-align: center;
     background-color: #A30000;
 }
-#secondPRed, #thirdPRed{
+
+#secondPRed,
+#thirdPRed {
     margin-top: 16px;
     margin-bottom: 16px;
     padding: 24px;
@@ -43,12 +44,12 @@
 }
 
 
-.txtMain{
+.txtMain {
     margin-top: 16px;
 }
 
 
-.greenLine{
+.greenLine {
     height: 4px;
     width: 100px;
     background-color: #ACF39D;
@@ -57,13 +58,15 @@
     border-radius: 25px;
 }
 
-#firstTxtImg, #thirdTxtImg{
+#firstTxtImg,
+#thirdTxtImg {
     box-shadow: 2px 2px 10px black;
     border-radius: 5px;
     padding: 16px;
 }
 
-#secondTxtImg, #fourthTxtImg{
+#secondTxtImg,
+#fourthTxtImg {
     box-shadow: 2px 2px 10px black;
     border-radius: 5px;
     padding: 16px;
@@ -77,64 +80,74 @@
 /* Acima Smartphone */
 @media screen and (min-width: 769px) {
 
-.imgMain{
-    padding: 0;
-    width: 50%;
-}
-.txtMain{
-    padding: 0;
-    margin: 0;
-}
+    #homeTitleBg {
+        background-image: url(../imagens/destaque-home.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 5% 0;
+        position: relative;
+    }
 
-.txtRight{
-    margin-left: 24px;
-}
+    #homeTitle {
+        font-size: 5rem;
+        padding: 0 10%;
+    }
 
-.txtLeft{
-    margin-right: 24px;
-}
+    .greenLine {
+        height: 4px;
+        width: 15%;
+        margin-left: 10%;
 
-#homeTitleTxt{
-    font-size: 5rem;
-    padding: 0 10%;
-}
+    }
 
-.greenLine{
-    height: 4px;
-    width: 15%;
-    margin-left: 10%;
+    .content {
+        margin-top: 80px;
+    }
 
-}
+    .imgMain {
+        padding: 0;
+        width: 50%;
+    }
 
+    .txtMain {
+        padding: 0;
+        margin: 0;
+    }
 
+    .txtRight {
+        margin-left: 24px;
+    }
 
-#homeTitleBg{
-    background-image: url(../imagens/destaque-home.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 5% 0;
-    position: relative;
-}
+    .txtLeft {
+        margin-right: 24px;
+    }
 
-#firstTxtImg, #thirdTxtImg{
-    display: flex;
-    align-items: center;
-}
+    #firstTxtImg,
+    #thirdTxtImg {
+        display: flex;
+        align-items: center;
+    }
 
-#secondTxtImg, #fourthTxtImg{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-}
+    #secondTxtImg,
+    #fourthTxtImg {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
 
-#firstPRed{
-    padding: 24px 10%;
-}
-#secondPRed, #thirdPRed{
-    padding: 24px 10%;
+    #firstPRed {
+        padding: 24px 10%;
+    }
 
-}
+    #secondPRed,
+    #thirdPRed {
+        padding: 24px 10%;
 
+    }
 
+    .cardHome {
+        width: 800px;
+        max-width: 1280px;
+    }
 
 }

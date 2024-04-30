@@ -1,11 +1,12 @@
 
 
-.greenLine{
+.greenLine {
     height: 4px;
     width: 100px;
     background-color: #ACF39D;
     position: relative;
-    margin: 16px;
+    margin-left: 5%;
+    border-radius: 25px;
 }
 
 #topOfAbout{
@@ -14,11 +15,6 @@
     background-position: center;
     padding: 140px 0;
     position: relative;
-}
-
-#topOfAbout h1{
-    position: relative;
-    padding-left: 16px;
 }
 
 #overlayPhotoAbout{
@@ -30,21 +26,23 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+#aboutTitle{
+    position: relative;
+    padding: 0 5%;
+    font-size: 2rem;
+}
+
 #explainAbout{
     margin-top: 40px;
 }
 #explainAbout p{
-    border-left: solid 3px #ACF39D;
     margin-top: 16px;
     margin-left: 8px;
 }
 
 
-.imgMain{
-    padding: 0 8px;
-    margin-top: 32px;
-}
 .txtMain{
+    border-left: solid 3px #ACF39D;
     padding: 0 8px;
     margin-top: 16px;
 }
@@ -64,16 +62,29 @@
         padding: 15% 0;
     }
 
-    .content{
-        margin-top: 0;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
+    #aboutTitle {
+        font-size: 5rem;
+        margin-left: 5%;
+    }
+
+    .greenLine {
+        height: 4px;
+        width: 15%;
+        margin-left: 10%;
+
     }
 
     #explainAbout{
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
+    }
+
+    .cardAbout{
+        padding: 16px;
+        border-radius: 5px;
+        width: 1000px;
+        box-shadow: 2px 2px 10px #ACF39D;
     }
     
 }
