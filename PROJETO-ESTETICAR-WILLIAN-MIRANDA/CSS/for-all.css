@@ -270,3 +270,21 @@ footer {
     }
 
 }
+
+
+
+
+@media screen and (max-width: 375px) {
+    #logoHeader {
+        margin-left: 8px;
+        width: 256px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #logoHeader {
+        margin-left: 8px;
+        width: 210px;
+    }
+    
+}
