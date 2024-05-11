@@ -14,8 +14,8 @@ body {
     font-size: 20px;
 }
 
-main{
-    margin-top: 128px; 
+main {
+    margin-top: 128px;
 }
 
 /* Formatação universal do tamanho das fontes */
@@ -51,7 +51,7 @@ small {
     font-size: 0.833rem;
 }
 
-img{
+img {
     border-radius: 5px;
 }
 
@@ -94,12 +94,17 @@ header {
     border-bottom: #A30000 solid 2px;
 }
 
-#menuUl a:hover{
+
+
+#menuUl a:hover {
     color: #ACF39D;
+    transition: 0.5s;
 }
 
-#menuFooter a:hover{
+
+#menuFooter a:hover {
     color: #ACF39D;
+    transition: 0.5s;
 }
 
 #menuUl li {
@@ -133,7 +138,8 @@ header {
     cursor: pointer;
     z-index: 1;
 }
-#backToTop{
+
+#backToTop {
     display: none;
     position: fixed;
     bottom: 24px;
@@ -143,7 +149,8 @@ header {
     cursor: pointer;
     padding: 8px;
 }
-svg{
+
+svg {
     width: 30px;
     height: 25px;
 }
@@ -192,33 +199,34 @@ footer {
 }
 
 
-.separatorLeft {
+/* .separatorLeft {
     height: 4px;
     width: 100px;
     margin: 24px 0;
     border-radius: 0 25px 25px 0;
     background-color: #ACF39D;
-}
+} */
 
-.separatorRight {
+.separatorFooter {
     height: 4px;
     width: 100px;
     margin: 24px 0;
-    border-radius: 25px 0 0 25px;
+    border-radius: 25px;
     background-color: #ACF39D;
 }
 
-.containerSeparatorR{
+.containerSeparatorR {
     width: 800px;
     display: flex;
     justify-content: flex-end;
 }
-.containerSeparatorL{
+
+.containerSeparatorL {
     width: 800px;
 }
 
-.content{
-    margin: 0 10% 0 10% ;
+.content {
+    margin: 0 10% 0 10%;
 }
 
 
@@ -233,10 +241,7 @@ footer {
         padding-right: 32px;
     }
 
-    footer{
-        justify-content: space-between;
-    }
-
+    
     #menuUl a.btContact {
         border: solid 3px #ACF39D;
     }
@@ -263,13 +268,43 @@ footer {
         font-size: 1.1rem;
         
     }
-
+    
     #btMenu,
     #btClose {
         display: none;
     }
+    
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 0.2fr 1fr 0.2fr 1fr;
+
+        grid-template-areas: "first second third fourth fifth sixth"
+        "seventh eight nine ten eleven twelve";
+
+        grid-template-rows: 4fr 1fr;
+        justify-items: center;
+    }
+
+    #forCopy{
+        display: none;
+    }
+    
+    .separatorFooter {
+        height: 100px;
+        width: 4px;
+        border-radius: 25px;
+        background-color: #ACF39D;
+    }
+
+    #copy{
+        grid-area: nine;
+        margin-top: 40px;
+    }
 
 }
+
+
+
 
 
 
@@ -286,5 +321,5 @@ footer {
         margin-left: 8px;
         width: 210px;
     }
-    
+
 }

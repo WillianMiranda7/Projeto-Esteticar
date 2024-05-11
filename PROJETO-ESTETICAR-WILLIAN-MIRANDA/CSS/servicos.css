@@ -48,7 +48,7 @@ main {
     border-radius: 25px;
 }
 
-li {
+.content li {
     display: flex;
     align-items: center;
     margin-top: 8px;

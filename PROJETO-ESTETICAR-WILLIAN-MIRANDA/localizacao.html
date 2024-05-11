@@ -24,7 +24,7 @@
                     <li><a href="quem-somos.html">Quem Somos</a></li>
                     <li><a href="servicos.html">Serviços</a></li>
                     <li><a href="promocoes.html">Promoções</a></li>
-                    <li><a href="localizacao.html">Localização</a></li>
+                    <li><a href="localizacao.html" style="color: #ACF39D">Localização</a></li>
                     <li><a href="contato.html" class="btContact">Contato</a></li>
                 </ul>
             </nav>
@@ -54,14 +54,26 @@
                 você e o
                 seu carro com excelência e qualidade!</p>
 
-                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7317.207688751903!2d-46.86696665662232!3d-23.510774506957105!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf03d48db7f701%3A0x3a91ff7fad2c2391!2sSENAI%20Barueri!5e0!3m2!1spt-BR!2sbr!4v1714110404362!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe id="map"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7317.207688751903!2d-46.86696665662232!3d-23.510774506957105!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf03d48db7f701%3A0x3a91ff7fad2c2391!2sSENAI%20Barueri!5e0!3m2!1spt-BR!2sbr!4v1714110404362!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </main>
 
     </div>
 
     <footer>
 
-        <img id="logoFooter" src="imagens/logo-esteticar-leve.png" alt="Logo Esteticar">
+        <div id="logoWithIcons">
+            <img id="logoFooter" src="imagens/logo-esteticar-leve.png" alt="Logo Esteticar">
+            <div class="footerIconsGroup">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+
+        <div class="separatorFooter"></div>
 
         <div id="foundOnWebsite">
             <h3>Procurar no site</h3>
@@ -71,24 +83,24 @@
                     <li><a href="quem-somos.html">Quem Somos</a></li>
                     <li><a href="servicos.html">Serviços</a></li>
                     <li><a href="promocoes.html">Promoções</a></li>
-                    <li><a href="localizacao.html">Localização</a></li>
+                    <li><a href="localizacao.html" style="color: #ACF39D;">Localização</a></li>
                     <li><a href="contato.html" class="btContact">Contato</a></li>
                 </ul>
             </nav>
         </div>
 
-        <div class="separatorLeft"></div>
+        <div class="separatorFooter"></div>
 
         <div id="foundUs">
             <h3>Nos encontre</h3>
             <p>Avenida José Giorgi,
-                <br>n° 120, Granja Viana
-            </p>
+            <p>n° 120, Granja Viana</p>
             <p>(11) 98765-4321</p>
             <p>@esteticar_cotia</p>
         </div>
 
-        <div class="separatorLeft"></div>
+        <div id="forCopy" class="separatorFooter"></div>
+
 
         <p id="copy">Copyright © Esteticar |
             <br>Powered by Willian Miranda
@@ -96,6 +108,7 @@
 
     </footer>
 
+    <script src="https://kit.fontawesome.com/d90aa4067d.js" crossorigin="anonymous"></script>
     <script src="JS/script-for-all.js"></script>
 
 </body>
